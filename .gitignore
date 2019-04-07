@@ -12,7 +12,6 @@ build
 # misc
 .DS_Store
 npm-debug.log
-package.json
 package-lock.json
 .idea/workspace.xml
 .idea/vcs.xml
