@@ -1,28 +1,12 @@
 import React, {PureComponent} from "react";
 import Image from "./Image";
+import imageClient from './services/image-client';
 import "./Gallery.css"
-import amigo from './drawings/amigo.jpg'
-import burger from './drawings/burger.jpg'
-import cat from './drawings/cat.jpg'
-import coffee from './drawings/coffee.jpg'
-import ginger from './drawings/ginger.jpg'
-import glen from './drawings/glen.jpg'
-import hornet from './drawings/hornet.jpg'
-import manInRed from './drawings/maninred.jpg'
 
 class Gallery extends PureComponent {
 
-    constructor(props) {
-        super(props);
-        this.getImages = this.getImages.bind(this);
-    }
-
-    getImages() {
-        return [amigo, burger, cat, coffee, ginger, glen, hornet, manInRed];
-    }
-
     render() {
-        let images = this.getImages();
+        let images = imageClient.getImages();
         return (
             <section className="portfolio" id="gallery">
                 <div className="container">
