@@ -6,3 +6,7 @@
 .portfolio .portfolio-item .portfolio-item-caption:hover {
     opacity: 0.9;
 }
+
+.image {
+    width: 100%;
+}
