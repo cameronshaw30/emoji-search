@@ -1,5 +1,4 @@
 import React, { PureComponent } from "react";
-import Nav from "./Nav";
 import Header from "./Header";
 import Gallery from "./Gallery";
 import About from "./About";
@@ -26,7 +25,7 @@ class App extends PureComponent {
   render() {
     return (
       <div>
-        <Nav />
+        {/*<Nav />*/}
         <Header />
         <Gallery />
         <About />
