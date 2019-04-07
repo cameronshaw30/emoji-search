@@ -8,7 +8,7 @@ import amigo from './drawings/amigo.jpg'
 class Gallery extends PureComponent {
     render() {
         let images = imageClient.getImages().map(image => {
-            return (<Image imageSource={image} />);
+            return (<Image imageSource={image.source} />);
         });
         return (
             <section className="portfolio" id="gallery">
