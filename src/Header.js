@@ -1,6 +1,7 @@
 import React, { PureComponent } from "react";
 import manInRed from './drawings/maninred.jpg'
 import "./Header.css"
+import Nav from './Nav';
 
 class Header extends PureComponent {
   render() {
@@ -12,6 +13,7 @@ class Header extends PureComponent {
                     <hr className="star-light" />
                     <h2 className="font-weight-light mb-0">Drawings</h2>
             </div>
+            <Nav />
         </header>
     );
   }
