@@ -34,7 +34,7 @@
     color: white;
 }
 
-button.bg-primary:hover {
+button.bg-primary:hover, button.bg-primary:focus {
     background-color: white!important;
     border-color: black;
     color: #0c5460!important;
