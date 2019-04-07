@@ -25,7 +25,6 @@ class App extends PureComponent {
   render() {
     return (
       <div>
-        {/*<Nav />*/}
         <Header />
         <Gallery />
         <About />
