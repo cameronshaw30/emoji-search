@@ -1,7 +1,7 @@
 import React, {PureComponent} from "react";
 import { Modal } from 'react-bootstrap';
 import Image from "./Image";
-import imageClient from './services/image-client';
+import imageClient from '../../services/image-client';
 import "./Gallery.css"
 
 class Gallery extends PureComponent {

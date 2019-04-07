@@ -1,13 +1,15 @@
 import React, { PureComponent } from "react";
 import "./Nav.css"
-import maninred from './drawings/maninred.jpg'
+import imageClient from '../../services/image-client';
 
 class Nav extends PureComponent {
+
   render() {
+    let manInRed = imageClient.getImageByName("Man In Red")
     return (
         <nav className="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
           <div className="container">
-            <img className="logo" src={maninred} alt="" />
+            <img className="logo" src={manInRed} alt="" />
             <a className="navbar-brand js-scroll-trigger" href="#page-top">Characters By Cam</a>
             <button className="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
               Menu
