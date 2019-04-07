@@ -3,12 +3,11 @@ import { Modal, Button } from 'react-bootstrap';
 import Image from "./Image";
 import imageClient from './services/image-client';
 import "./Gallery.css"
-import amigo from './drawings/amigo.jpg'
 
 class Gallery extends PureComponent {
     render() {
         let images = imageClient.getImages().map(image => {
-            return (<Image imageSource={image.source} />);
+            return (<Image image={image} />);
         });
         return (
             <section className="portfolio" id="gallery">

@@ -4,7 +4,7 @@ import { Modal, Button } from 'react-bootstrap';
 class Image extends PureComponent {
   constructor(props) {
     super(props);
-    this.imageSource = this.props.imageSource;
+    this.image = this.props.image;
     this.state = {show:false};
   }
 
@@ -18,14 +18,14 @@ class Image extends PureComponent {
                 <i className="fas fa-search-plus fa-3x"></i>
               </div>
             </div>
-            <img className="img-fluid" src={this.imageSource} alt="" />
+            <img className="img-fluid" src={this.image.source} alt="" />
           </a>
           <Modal show={this.state.show} centered onHide={close} size="lg" >
             <Modal.Header closeButton>
-              <Modal.Title>Amigo</Modal.Title>
+              <Modal.Title>{this.image.name}</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-              <img class="image" src={this.imageSource} />
+              <img class="image" src={this.image.source} />
             </Modal.Body>
           </Modal>
         </div>
