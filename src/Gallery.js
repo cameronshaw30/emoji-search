@@ -1,4 +1,5 @@
 import React, {PureComponent} from "react";
+import Image from "./Image";
 import "./Gallery.css"
 import amigo from './drawings/amigo.jpg'
 import burger from './drawings/burger.jpg'
@@ -28,6 +29,7 @@ class Gallery extends PureComponent {
                     <h2 className="text-center text-uppercase text-secondary mb-0">Gallery</h2>
                     <hr className="star-dark mb-5"/>
                     <div className="row">
+                        <Image imageSource={images[0]} />
                         <div className="col-md-6 col-lg-4">
                             <a className="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
                                 <div className="portfolio-item-caption d-flex position-absolute h-100 w-100">
