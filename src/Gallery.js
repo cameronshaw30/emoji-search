@@ -7,7 +7,7 @@ import coffee from './drawings/coffee.jpg'
 import ginger from './drawings/ginger.jpg'
 import glen from './drawings/glen.jpg'
 import hornet from './drawings/hornet.jpg'
-import maninred from './drawings/maninred.jpg'
+import manInRed from './drawings/maninred.jpg'
 
 class Gallery extends PureComponent {
     render() {
@@ -94,7 +94,7 @@ class Gallery extends PureComponent {
                                             <i className="fas fa-search-plus fa-3x"></i>
                                         </div>
                                     </div>
-                                    <img className="img-fluid" src={maninred} alt=""/>
+                                    <img className="img-fluid" src={manInRed} alt=""/>
                                 </a>
                             </div>
                         </div>
