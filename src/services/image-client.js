@@ -8,7 +8,16 @@ import hornet from '../drawings/hornet.jpg'
 import manInRed from '../drawings/maninred.jpg'
 
 function getImages() {
-    return [amigo, burger, cat, coffee, ginger, glen, hornet, manInRed];
+    return [
+        {name: "Amigo", source:amigo},
+        {name: "Burger", source:burger},
+        {name: "Cat", source:cat},
+        {name: "Coffee", source:coffee},
+        {name: "Ginger", source:ginger},
+        {name: "Glen", source:glen},
+        {name: "Hornet", source:hornet},
+        {name: "Man In Red", source:manInRed}
+    ];
 }
 
 export default {getImages};

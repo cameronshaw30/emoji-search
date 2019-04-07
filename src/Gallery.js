@@ -1,13 +1,13 @@
 import React, {PureComponent} from "react";
+import { Modal } from 'react-bootstrap';
 import Image from "./Image";
 import imageClient from './services/image-client';
 import "./Gallery.css"
 
 class Gallery extends PureComponent {
-
     render() {
         let images = imageClient.getImages().map(image => {
-            return (<Image imageSource={image} />);
+            return (<Image image={image} />);
         });
         return (
             <section className="portfolio" id="gallery">
@@ -18,7 +18,6 @@ class Gallery extends PureComponent {
                         {images}
                     </div>
                 </div>
-
             </section>
         );
     }
