@@ -1,5 +1,5 @@
 import React, {PureComponent} from "react";
-import { Modal, Button } from 'react-bootstrap';
+import { Modal } from 'react-bootstrap';
 import Image from "./Image";
 import imageClient from './services/image-client';
 import "./Gallery.css"
