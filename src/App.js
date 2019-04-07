@@ -1,7 +1,12 @@
 import React, { PureComponent } from "react";
+import Nav from "./Nav";
 import Header from "./Header";
-import SearchInput from "./SearchInput";
-import EmojiResults from "./EmojiResults";
+import Gallery from "./Gallery";
+import About from "./About";
+import Contact from "./Contact"
+import Footer from "./Footer"
+import Popups from "./Popups"
+import "./App.css";
 import filterEmoji from "./filterEmoji";
 
 class App extends PureComponent {
@@ -21,9 +26,13 @@ class App extends PureComponent {
   render() {
     return (
       <div>
+        <Nav />
         <Header />
-        <SearchInput textChange={this.handleSearchChange} />
-        <EmojiResults emojiData={this.state.filteredEmoji} />
+        <Gallery />
+        <About />
+        <Contact />
+        <Footer />
+        <Popups />
       </div>
     );
   }
