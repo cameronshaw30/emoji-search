@@ -10,98 +10,118 @@ import hornet from './drawings/hornet.jpg'
 import manInRed from './drawings/maninred.jpg'
 
 class Gallery extends PureComponent {
+
+    constructor(props) {
+        super(props);
+        this.getImages = this.getImages.bind(this);
+    }
+
+    getImages() {
+        return [amigo, burger, cat, coffee, ginger, glen, hornet, manInRed];
+    }
+
     render() {
+        let images = this.getImages();
         return (
             <section className="portfolio" id="gallery">
                 <div className="container">
                     <h2 className="text-center text-uppercase text-secondary mb-0">Gallery</h2>
                     <hr className="star-dark mb-5"/>
-                        <div className="row">
-                            <div className="col-md-6 col-lg-4">
-                                <a className="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
-                                    <div className="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                                        <div className="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                                            <i className="fas fa-search-plus fa-3x"></i>
-                                        </div>
+                    <div className="row">
+                        <div className="col-md-6 col-lg-4">
+                            <a className="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+                                <div className="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                    <div
+                                        className="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        <i className="fas fa-search-plus fa-3x"></i>
                                     </div>
-                                    <img className="img-fluid" src={amigo} alt=""/>
-                                </a>
-                            </div>
-                            <div className="col-md-6 col-lg-4">
-                                <a className="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
-                                    <div className="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                                        <div className="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                                            <i className="fas fa-search-plus fa-3x"></i>
-                                        </div>
-                                    </div>
-                                    <img className="img-fluid" src={burger} alt=""/>
-                                </a>
-                            </div>
-                            <div className="col-md-6 col-lg-4">
-                                <a className="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
-                                    <div className="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                                        <div className="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                                            <i className="fas fa-search-plus fa-3x"></i>
-                                        </div>
-                                    </div>
-                                    <img className="img-fluid" src={cat} alt=""/>
-                                </a>
-                            </div>
-                            <div className="col-md-6 col-lg-4">
-                                <a className="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
-                                    <div className="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                                        <div className="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                                            <i className="fas fa-search-plus fa-3x"></i>
-                                        </div>
-                                    </div>
-                                    <img className="img-fluid" src={coffee} alt=""/>
-                                </a>
-                            </div>
-                            <div className="col-md-6 col-lg-4">
-                                <a className="portfolio-item d-block mx-auto" href="#portfolio-modal-5">
-                                    <div className="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                                        <div className="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                                            <i className="fas fa-search-plus fa-3x"></i>
-                                        </div>
-                                    </div>
-                                    <img className="img-fluid" src={ginger} alt=""/>
-                                </a>
-                            </div>
-                            <div className="col-md-6 col-lg-4">
-                                <a className="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
-                                    <div className="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                                        <div className="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                                            <i className="fas fa-search-plus fa-3x"></i>
-                                        </div>
-                                    </div>
-                                    <img className="img-fluid" src={glen} alt=""/>
-                                </a>
-                            </div>
-                            <div className="col-md-6 col-lg-4">
-                                <a className="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
-                                    <div className="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                                        <div className="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                                            <i className="fas fa-search-plus fa-3x"></i>
-                                        </div>
-                                    </div>
-                                    <img className="img-fluid" src={hornet} alt=""/>
-                                </a>
-                            </div>
-                            <div className="col-md-6 col-lg-4">
-                                <a className="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
-                                    <div className="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                                        <div className="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                                            <i className="fas fa-search-plus fa-3x"></i>
-                                        </div>
-                                    </div>
-                                    <img className="img-fluid" src={manInRed} alt=""/>
-                                </a>
-                            </div>
+                                </div>
+                                <img className="img-fluid" src={images[0]} alt=""/>
+                            </a>
                         </div>
+                        <div className="col-md-6 col-lg-4">
+                            <a className="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
+                                <div className="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                    <div
+                                        className="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        <i className="fas fa-search-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img className="img-fluid" src={images[1]} alt=""/>
+                            </a>
+                        </div>
+                        <div className="col-md-6 col-lg-4">
+                            <a className="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
+                                <div className="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                    <div
+                                        className="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        <i className="fas fa-search-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img className="img-fluid" src={images[2]} alt=""/>
+                            </a>
+                        </div>
+                        <div className="col-md-6 col-lg-4">
+                            <a className="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
+                                <div className="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                    <div
+                                        className="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        <i className="fas fa-search-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img className="img-fluid" src={images[3]} alt=""/>
+                            </a>
+                        </div>
+                        <div className="col-md-6 col-lg-4">
+                            <a className="portfolio-item d-block mx-auto" href="#portfolio-modal-5">
+                                <div className="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                    <div
+                                        className="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        <i className="fas fa-search-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img className="img-fluid" src={images[4]} alt=""/>
+                            </a>
+                        </div>
+                        <div className="col-md-6 col-lg-4">
+                            <a className="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
+                                <div className="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                    <div
+                                        className="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        <i className="fas fa-search-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img className="img-fluid" src={images[5]} alt=""/>
+                            </a>
+                        </div>
+                        <div className="col-md-6 col-lg-4">
+                            <a className="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
+                                <div className="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                    <div
+                                        className="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        <i className="fas fa-search-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img className="img-fluid" src={images[6]} alt=""/>
+                            </a>
+                        </div>
+                        <div className="col-md-6 col-lg-4">
+                            <a className="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
+                                <div className="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                    <div
+                                        className="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        <i className="fas fa-search-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img className="img-fluid" src={images[7]} alt=""/>
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
             </section>
         );
     }
 }
+
 export default Gallery;
