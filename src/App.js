@@ -5,14 +5,30 @@ import Footer from "./components/Footer/Footer"
 import "./App.css";
 
 class App extends PureComponent {
-  render() {
-    return (
-      <div>
-        <Header />
-        <Content />
-        <Footer />
-      </div>
-    );
-  }
+
+    constructor(props) {
+        super(props);
+        this.navListener = this.navListener.bind(this);
+        this.state = {
+            visible: "Gallery"
+        };
+    }
+
+    navListener(contentName) {
+        this.setState({
+            visible: contentName
+        });
+    }
+
+    render() {
+        return (
+            <div>
+                <Header navigate={this.navListener}/>
+                <Content visible={this.state.visible}/>
+                <Footer/>
+            </div>
+        );
+    }
 }
+
 export default App;

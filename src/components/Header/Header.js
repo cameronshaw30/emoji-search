@@ -14,7 +14,7 @@ class Header extends PureComponent {
                     <hr className="star-light"/>
                     <h2 className="font-weight-light mb-0">Drawings</h2>
                 </div>
-                <Nav/>
+                <Nav navigate={this.props.navigate}/>
             </header>
         );
     }

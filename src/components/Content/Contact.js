@@ -2,9 +2,20 @@ import React, { PureComponent } from "react";
 import "./Contact.css"
 
 class Contact extends PureComponent {
+
+  constructor(props) {
+    super(props);
+    this.reference = React.createRef();
+    this.scroll = this.props.scroll.bind(this);
+  }
+
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    this.scroll();
+  }
+
   render() {
     return (
-        <section id="contact">
+        <section id="contact" ref={this.reference}>
           <div className="container">
             <h2 className="text-center text-uppercase text-secondary mb-0">Contact Me</h2>
             <hr className="star-dark mb-5"/>
