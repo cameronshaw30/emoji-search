@@ -1,5 +1,4 @@
 import React, {PureComponent} from "react";
-import { Modal } from 'react-bootstrap';
 import Image from "./Image";
 import imageClient from '../../services/image-client';
 import "./Gallery.css"
@@ -7,7 +6,7 @@ import "./Gallery.css"
 class Gallery extends PureComponent {
     render() {
         let images = imageClient.getImages().map(image => {
-            return (<Image image={image} />);
+            return (<Image key={image.name} image={image} />);
         });
         return (
             <section className="portfolio" id="gallery">

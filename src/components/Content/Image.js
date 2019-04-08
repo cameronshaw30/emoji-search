@@ -25,7 +25,7 @@ class Image extends PureComponent {
               <Modal.Title>{this.image.name}</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-              <img class="image" src={this.image.source} />
+              <img class="image" src={this.image.source} alt={this.image.name}/>
             </Modal.Body>
           </Modal>
         </div>

@@ -16,17 +16,17 @@ class Footer extends PureComponent {
                             <h4 className="text-uppercase mb-4">Around the Web</h4>
                             <ul className="list-inline mb-0">
                                 <li className="list-inline-item">
-                                    <a className="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.facebook.com/cammyshaw" target="_blank">
+                                    <a className="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.facebook.com/cammyshaw">
                                         <i className="fab fa-fw fa-facebook-f"></i>
                                     </a>
                                 </li>
                                 <li className="list-inline-item">
-                                    <a className="btn btn-outline-light btn-social text-center rounded-circle" href="https://twitter.com/CameronShaw" target="_blank">
+                                    <a className="btn btn-outline-light btn-social text-center rounded-circle" href="https://twitter.com/CameronShaw">
                                         <i className="fab fa-fw fa-twitter"></i>
                                     </a>
                                 </li>
                                 <li className="list-inline-item">
-                                    <a className="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.linkedin.com/in/cameron-shaw-71855424/" target="_blank">
+                                    <a className="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.linkedin.com/in/cameron-shaw-71855424/">
                                         <i className="fab fa-fw fa-linkedin-in"></i>
                                     </a>
                                 </li>
