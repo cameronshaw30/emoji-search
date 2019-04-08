@@ -8,11 +8,13 @@ class Gallery extends PureComponent {
     constructor(props) {
         super(props);
         this.reference = React.createRef();
-        this.scroll = this.props.scroll.bind(this);
+        this.scroll = this.props.scroll;
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
-        this.scroll();
+        if(this.props.isVisible) {
+            this.props.scroll(this.reference.current);
+        }
     }
 
     render() {

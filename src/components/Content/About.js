@@ -10,7 +10,9 @@ class About extends PureComponent {
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
-        this.scroll();
+        if(this.props.isVisible) {
+            this.props.scroll(this.reference.current);
+        }
     }
 
     render() {

@@ -21,7 +21,7 @@ function getImages() {
 }
 
 function getImageByName(name) {
-    return getImages().filter(image => image.name === name);
+    return getImages().find(image => image.name === name);
 }
 
 export default {getImages, getImageByName};
