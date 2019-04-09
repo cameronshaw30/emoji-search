@@ -1,17 +1,26 @@
-import React, { PureComponent } from "react";
+import React, {PureComponent} from "react";
 import Gallery from "./Gallery";
 import About from "./About";
 import Contact from "./Contact";
+import Header from "./Header";
 
 class Content extends PureComponent {
-  render() {
-    return (
-        <div>
-            <Gallery />
-            <About />
-            <Contact />
-        </div>
-    );
-  }
+
+    constructor(props) {
+        super(props);
+        this.reference = React.createRef();
+    }
+
+    render() {
+        return (
+            <div ref={this.reference}>
+                <Header isVisible={this.props.scrollTo === "Home"} scroll={this.props.onScroll}/>
+                <Gallery isVisible={this.props.scrollTo === "Gallery"} scroll={this.props.onScroll} />
+                <About isVisible={this.props.scrollTo === "About"} scroll={this.props.onScroll} />
+                <Contact isVisible={this.props.scrollTo === "Contact"} scroll={this.props.onScroll} />
+            </div>
+        );
+    }
 }
+
 export default Content;
