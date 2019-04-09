@@ -1,5 +1,6 @@
 import React, { PureComponent } from "react";
 import "./Footer.css"
+import pride from "../../img/pride.png";
 
 class Footer extends PureComponent {
   render() {
@@ -33,6 +34,9 @@ class Footer extends PureComponent {
                             </ul>
                         </div>
                     </div>
+                </div>
+                <div>
+                    <img class="flag" src={pride} />
                 </div>
             </footer>
 
