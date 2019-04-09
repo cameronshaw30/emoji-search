@@ -1,5 +1,6 @@
 import React, { PureComponent } from "react";
 import "./Footer.css"
+import pride from "../../img/pride.png";
 
 class Footer extends PureComponent {
   render() {
@@ -16,23 +17,26 @@ class Footer extends PureComponent {
                             <h4 className="text-uppercase mb-4">Around the Web</h4>
                             <ul className="list-inline mb-0">
                                 <li className="list-inline-item">
-                                    <a className="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.facebook.com/cammyshaw">
+                                    <a className="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.facebook.com/charactersbycam/">
                                         <i className="fab fa-fw fa-facebook-f"></i>
                                     </a>
                                 </li>
                                 <li className="list-inline-item">
-                                    <a className="btn btn-outline-light btn-social text-center rounded-circle" href="https://twitter.com/CameronShaw">
+                                    <a className="btn btn-outline-light btn-social text-center rounded-circle" href="https://twitter.com/charactersbycam">
                                         <i className="fab fa-fw fa-twitter"></i>
                                     </a>
                                 </li>
                                 <li className="list-inline-item">
-                                    <a className="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.linkedin.com/in/cameron-shaw-71855424/">
-                                        <i className="fab fa-fw fa-linkedin-in"></i>
+                                    <a className="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.instagram.com/charactersbycam/">
+                                        <i className="fab fa-fw fa-instagram"></i>
                                     </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
+                </div>
+                <div>
+                    <img class="flag" src={pride} />
                 </div>
             </footer>
 
