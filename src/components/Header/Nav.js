@@ -32,7 +32,6 @@ class Nav extends PureComponent {
                         <ul className="navbar-nav ml-auto">
                             <NavItem name="Gallery" navigate={this.handleNavigate}/>
                             <NavItem name="About" navigate={this.handleNavigate}/>
-                            <NavItem name="Contact" navigate={this.handleNavigate}/>
                         </ul>
                     </div>
                 </div>
