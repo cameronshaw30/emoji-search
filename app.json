@@ -1,0 +1,17 @@
+{
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ],
+  "env": {
+    "NODE_ENVIRONMENT": "development"
+  },
+  "formation": {
+  },
+  "name": "characters-by-cam",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}
