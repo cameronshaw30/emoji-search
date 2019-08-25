@@ -37,7 +37,7 @@ class Footer extends PureComponent {
                     </div>
                 </div>
                 <div>
-                    <img class="flag" src={pride} />
+                    <img className="flag" src={pride} />
                 </div>
             </footer>
 
