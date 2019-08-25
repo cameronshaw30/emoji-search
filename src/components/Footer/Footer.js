@@ -8,6 +8,7 @@ class Footer extends PureComponent {
         <div>
             <footer className="footer text-center">
                 <div className="container">
+                    {/*<hr className="star-light mb-5"/>*/}
                     <div className="row">
                         <div className="col-md-6 mb-5 mb-lg-0">
                             <h4 className="text-uppercase mb-4">Location</h4>
